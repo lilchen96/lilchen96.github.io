@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Chen</title><meta name="author" content="Chen"><meta name="copyright" content="Chen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Chen">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Chen">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/config/profile_photo.jpg">
+<meta property="article:author" content="Chen">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/config/profile_photo.jpg"><link rel="shortcut icon" href="/images/config/favicon.ico"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Chen',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/config/profile_photo.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/images/config/background.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Chen</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Chen</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2019/11/23/JS%E7%BC%96%E8%AF%91%E5%99%A8-Babel/" title="JS编译器:Babel"><img class="post-bg" src="/images/covers/babel.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS编译器:Babel"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/11/23/JS%E7%BC%96%E8%AF%91%E5%99%A8-Babel/" title="JS编译器:Babel">JS编译器:Babel</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-11-23T06:00:57.000Z" title="发表于 2019-11-23 14:00:57">2019-11-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  Babel 是什么&emsp;&emsp;Babel 是一个 JavaScript 编译器。 Babel 有什么用&emsp;&emsp;Babel 可以将新版的 ES 语法转为能被旧版浏览器支持的旧版 ES 语法。借用 Babel 官网的 slogan：“今天就开始使用下一代的 JavaScript 语法编程吧！”。&emsp;&emsp;举个例子：&emsp;&emsp;我的代码里用到了最新发布的 ES 语法规范，但是我的浏览器没有升级，浏览器并不认识这些语法，自然在运行时就会报错了。这时候我祭出了 Babel，它把代码中那些新的语法翻译成了浏览器认识的语法，代码最终得以成功运行。 Babel 的实现原理&emsp;&emsp;Babel 不运行 JS 代码，它只是把这些代码看做字符串。Babel 将代码字符串转为语义树，在语义树上修改需要修改的语法，再将语义树转为代码输出。语义树其实就是一个对象，举个例子：输入的代码： 123if (1 &gt; 0) &#123;   ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2019/09/27/%E6%B5%85%E8%B0%88cookie/" title="浅谈cookie"><img class="post-bg" src="/images/covers/cookie.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浅谈cookie"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/27/%E6%B5%85%E8%B0%88cookie/" title="浅谈cookie">浅谈cookie</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-09-27T06:00:57.000Z" title="发表于 2019-09-27 14:00:57">2019-09-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  基本信息&emsp;&emsp;cookie 是一个非常具体的东西，指的就是浏览器里面能永久存储的一种数据。跟服务器没啥关系，仅仅是浏览器实现的一种数据存储功能。&emsp;&emsp;cookie 存储在用户本地终端。&emsp;&emsp;cookie 大小限制一般为 4k。&emsp;&emsp;cookie 会增加请求大小。&emsp;&emsp;cookie 是存储在本地的，可以找到相应的文件。 如何设置和发送 cookie&emsp;&emsp;服务器在 response head 中可以设置 set-cookie，来存储 cookie 到客户端。&emsp;&emsp;浏览器发送请求时，request head 中可以携带 cookie。 会话期 cookie 和 持久化 cookie&emsp;&emsp;没设置 Expires 或 Max-Age 的 cookie 为会话期 cookie，即结束会话（关闭浏览器）就被清除。会话期 cookie 存储在浏览器内存中。但浏览器通常支持会话恢复功能。&emsp;&emsp;设置了 Expires 或...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2019/09/24/%E5%90%8D%E8%AF%8D%E7%8E%8B%E5%9B%BD%E9%87%8C%E7%9A%84%E6%AD%BB%E5%88%91/" title="名词王国里的死刑 Execution in the Kingdom of Nouns"><img class="post-bg" src="/images/covers/kingdom.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="名词王国里的死刑 Execution in the Kingdom of Nouns"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/09/24/%E5%90%8D%E8%AF%8D%E7%8E%8B%E5%9B%BD%E9%87%8C%E7%9A%84%E6%AD%BB%E5%88%91/" title="名词王国里的死刑 Execution in the Kingdom of Nouns">名词王国里的死刑 Execution in the Kingdom of Nouns</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-09-24T09:27:39.000Z" title="发表于 2019-09-24 17:27:39">2019-09-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  &emsp;&emsp;发现一篇和函数式编程相关的文章。加深了自己对函数编程的理解，很有意思。便转载了过来。原文出自：Steve Yegge 的大作《Execution in the Kingdom of Nouns》 翻译正文&emsp;&emsp;Hello，world！今天我给大家讲一个关于 Java 魔鬼国王和他在全国范围内驱逐动词的故事。&emsp;&emsp;注意：这个故事并没有什么圆满结局。如果你心灵脆弱或者吹毛求疵的话，这个故事不适合你。如果你易于动怒或喜欢在别人的博客上妄加评论， 那么请立即停止阅读。&emsp;&emsp;在我们开始这个故事之前，先让我们熟悉一下背景： 溢出的垃圾&emsp;&emsp;所有使用 Java...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2019/06/27/%E5%AF%B9%E4%BA%8EJS%E7%9A%84%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/" title="对于JS的原型的理解"><img class="post-bg" src="/images/covers/kingdom.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="对于JS的原型的理解"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/06/27/%E5%AF%B9%E4%BA%8EJS%E7%9A%84%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/" title="对于JS的原型的理解">对于JS的原型的理解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-06-27T06:35:32.000Z" title="发表于 2019-06-27 14:35:32">2019-06-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  最近看ES5特性,所以又回看了一遍JS原型的相关知识。看到这样一句话“构造函数是妈，原型是爹”觉得很有意思，很形象。举几个例子： 1Function.prototype ===  类比：Function 1Object.prototype.__proto__ 类比：Object是妈妈，Object.prototype是爸爸，Object.prototype.__proto__即是爸爸的爸爸。  </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2019/03/26/Windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0cmd%E5%91%BD%E4%BB%A4%E8%A1%8C/" title="Windows右键添加cmd命令行"><img class="post-bg" src="/images/covers/cmd.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows右键添加cmd命令行"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/03/26/Windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0cmd%E5%91%BD%E4%BB%A4%E8%A1%8C/" title="Windows右键添加cmd命令行">Windows右键添加cmd命令行</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-03-26T06:27:39.000Z" title="发表于 2019-03-26 14:27:39">2019-03-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  &emsp;&emsp;最近常敲命令行，每次都要 cd 到相关路径，有点麻烦。上网查询了一下，发现 windows 系统可以通过注册表的方式将 cmd 命令行添加到右键菜单。这样就可以在指定路径下打开 cmd 命令行，很方便。 最终效果  具体步骤1.在电脑上任意位置创建一个.txt 文件，命名为OpenCmdHere.txt。 2.在文件中输入如下代码： 1234567891011121314151617181920212223242526272829Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere]@=&quot;在此处打开命令窗口&quot;&quot;Icon&quot;=&quot;cmd.exe&quot;[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere\command]@=&quot;cmd.exe /s /k pushd...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2019/02/14/%E8%87%AA%E4%BB%8E%E6%9C%89%E4%BA%86cnpm%EF%BC%8C%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E6%88%91%E7%9A%84npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E4%BA%86/" title="自从有了cnpm，妈妈再也不用担心我的npm下载慢了"><img class="post-bg" src="/images/covers/npm_logo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="自从有了cnpm，妈妈再也不用担心我的npm下载慢了"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/02/14/%E8%87%AA%E4%BB%8E%E6%9C%89%E4%BA%86cnpm%EF%BC%8C%E5%A6%88%E5%A6%88%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E6%8B%85%E5%BF%83%E6%88%91%E7%9A%84npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E4%BA%86/" title="自从有了cnpm，妈妈再也不用担心我的npm下载慢了">自从有了cnpm，妈妈再也不用担心我的npm下载慢了</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-02-14T09:51:43.000Z" title="发表于 2019-02-14 17:51:43">2019-02-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  什么是 npm&emsp;&emsp;npm 全称(Node Package Manager)，是一个用 JavaScript 写的包管理工具。安装了 npm 后，需要下载包时，只需要输入 npm 命令，就会去 npm 官方的仓库下载相关包。 npm 和 Node.js&emsp;&emsp;npm 的发展是跟 Node.js 的发展相辅相成的。Node.js 是由一个在德国工作的美国程序员 Ryan Dahl 写的。他写了 Node.js，但是 Node.js 缺少一个包管理器，于是他和 npm 的作者一拍即合、抱团取暖，最终 Node.js 内置了 npm。&emsp;&emsp;后来的事情大家都知道，Node.js 火了。随着 Node.js 的火爆，大家开始用 npm 来共享 JS 代码了，到现在 npm 已经成为了前端的标配。 为什么 npm 下载包慢&emsp;&emsp;经过了上面的介绍，这个问题的答案就显而易见了。npm 的仓库也就是服务器在国外，所以我们在国内使用 npm 下载依赖包会慢。 如何解决下载慢的问题&emsp;&emsp;淘宝团队做了一个完整...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/09/05/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8markdown%EF%BC%88%E4%BA%8C%EF%BC%89/" title="学习使用markdown（二）"><img class="post-bg" src="/images/covers/markdownicon.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学习使用markdown（二）"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/05/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8markdown%EF%BC%88%E4%BA%8C%EF%BC%89/" title="学习使用markdown（二）">学习使用markdown（二）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-05T08:15:34.000Z" title="发表于 2018-09-05 16:15:34">2018-09-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  继续学习Markdown语法 图片图片展示代码如下： 12![alt 属性文本](图片地址)![alt 属性文本](图片地址 &quot;可选标题&quot;)  实现效果：    图片链接代码如下: 1234这个链接用 img 作为网址变量 [图片][img]然后在文档的结尾为变量赋值（网址）[img]: /images/covers/markdownicon.png  实现效果：  这个链接用 img 作为网址变量 图片  表格Markdown 制作表格使用|来分隔不同的单元格，使用-来分隔表头和其他行。代码如下： 1234|  表头   | 表头  ||  ----  | ----  || 单元格  | 单元格 || 单元格  | 单元格 |  实现效果：  表格：    表头 表头    单元格 单元格   单元格 单元格    我们可以设置表格的对齐方式：  -: 设置内容和标题栏居右对齐。 :- 设置内容和标题栏居左对齐。 :-: 设置内容和标题栏居中对齐。  代码如下： 1234| 左对齐 | 中对齐 |右对齐 || :---- | :----: |----:...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2018/09/03/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8markdown%EF%BC%88%E4%B8%80%EF%BC%89/" title="学习使用markdown（一）"><img class="post-bg" src="/images/covers/markdownicon.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学习使用markdown（一）"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/09/03/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8markdown%EF%BC%88%E4%B8%80%EF%BC%89/" title="学习使用markdown（一）">学习使用markdown（一）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-09-03T06:28:50.000Z" title="发表于 2018-09-03 14:28:50">2018-09-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="content">  Markdown简介Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。 Markdown 应用Markdown 能被使用来撰写电子书，如：Gitbook。当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。 Markdown语法标题多级标题#递增代码如下： 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题  列表无序列表代码如下： 123- 文本1- 文本2- 文本3  实现效果：   文本 1 文本 2 文本 3   有序列表代码如下： 1231....</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2018/08/31/%E5%BC%80%E7%AF%87/" title="开篇"><img class="post-bg" src="/images/covers/kdot1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="开篇"></a></div><div class="recent-post-info"><a class="article-title" href="/2018/08/31/%E5%BC%80%E7%AF%87/" title="开篇">开篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2018-08-31T09:38:24.000Z" title="发表于 2018-08-31 17:38:24">2018-08-31</time></span></div><div class="content">  &emsp;&emsp;hello，这就是我发的第一篇博客了。以后，我会在这里发布东西会很杂。音乐，电影，体育，技术，个人感悟等等。。。This is my life！  </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/config/profile_photo.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Chen</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lilchen96"><i class="fab fa-github"></i><span>关注我</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/17/%E8%AE%B0%E4%B8%80%E6%AC%A1SSE%E6%8E%A5%E5%8F%A3%E5%AF%B9%E6%8E%A5%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次SSE接口对接的问题"><img src="/images/covers/SSE.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记一次SSE接口对接的问题"/></a><div class="content"><a class="title" href="/2022/04/17/%E8%AE%B0%E4%B8%80%E6%AC%A1SSE%E6%8E%A5%E5%8F%A3%E5%AF%B9%E6%8E%A5%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次SSE接口对接的问题">记一次SSE接口对接的问题</a><time datetime="2022-04-17T06:35:32.000Z" title="发表于 2022-04-17 14:35:32">2022-04-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/28/%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD/" title="文件批量下载"><img src="/images/covers/download.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文件批量下载"/></a><div class="content"><a class="title" href="/2020/08/28/%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD/" title="文件批量下载">文件批量下载</a><time datetime="2020-08-28T06:42:36.000Z" title="发表于 2020-08-28 14:42:36">2020-08-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/13/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6/" title="函数式组件和自定义表格单元格"><img src="/images/covers/JSX_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="函数式组件和自定义表格单元格"/></a><div class="content"><a class="title" href="/2020/07/13/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6/" title="函数式组件和自定义表格单元格">函数式组件和自定义表格单元格</a><time datetime="2020-07-13T09:22:19.000Z" title="发表于 2020-07-13 17:22:19">2020-07-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/05/11/%E8%AE%B0%E4%B8%80%E6%AC%A1webpack%E9%85%8D%E7%BD%AE%E4%BA%A7%E7%94%9F%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次webpack配置产生的问题"><img src="/images/covers/webpack.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记一次webpack配置产生的问题"/></a><div class="content"><a class="title" href="/2020/05/11/%E8%AE%B0%E4%B8%80%E6%AC%A1webpack%E9%85%8D%E7%BD%AE%E4%BA%A7%E7%94%9F%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次webpack配置产生的问题">记一次webpack配置产生的问题</a><time datetime="2020-05-11T01:25:57.000Z" title="发表于 2020-05-11 09:25:57">2020-05-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/05/06/CSS%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" title="CSS实现毛玻璃效果"><img src="/images/covers/animate.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS实现毛玻璃效果"/></a><div class="content"><a class="title" href="/2020/05/06/CSS%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" title="CSS实现毛玻璃效果">CSS实现毛玻璃效果</a><time datetime="2020-05-06T10:33:42.000Z" title="发表于 2020-05-06 18:33:42">2020-05-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">17</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Vue/" style="font-size: 1.1em; color: #999">Vue</a> <a href="/tags/vue-cli/" style="font-size: 1.1em; color: #999">vue-cli</a> <a href="/tags/Kanye/" style="font-size: 1.1em; color: #999">Kanye</a> <a href="/tags/VSCode/" style="font-size: 1.1em; color: #999">VSCode</a> <a href="/tags/UMD/" style="font-size: 1.1em; color: #999">UMD</a> <a href="/tags/Unicode/" style="font-size: 1.1em; color: #999">Unicode</a> <a href="/tags/JavaScript/" style="font-size: 1.4em; color: #99a5b6">JavaScript</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/html/" style="font-size: 1.1em; color: #999">html</a> <a href="/tags/SSE/" style="font-size: 1.1em; color: #999">SSE</a> <a href="/tags/markdown/" style="font-size: 1.2em; color: #999da3">markdown</a> <a href="/tags/IE/" style="font-size: 1.1em; color: #999">IE</a> <a href="/tags/ES6/" style="font-size: 1.2em; color: #999da3">ES6</a> <a href="/tags/nodejs/" style="font-size: 1.1em; color: #999">nodejs</a> <a href="/tags/windows/" style="font-size: 1.1em; color: #999">windows</a> <a href="/tags/animate/" style="font-size: 1.1em; color: #999">animate</a> <a href="/tags/%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8B/" style="font-size: 1.1em; color: #999">函数编程</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 1.1em; color: #999">浏览器</a> <a href="/tags/JSX/" style="font-size: 1.1em; color: #999">JSX</a> <a href="/tags/cookie/" style="font-size: 1.1em; color: #999">cookie</a> <a href="/tags/ESLint/" style="font-size: 1.1em; color: #999">ESLint</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 1.5em; color: #99a9bf">技术</a> <a href="/tags/Babel/" style="font-size: 1.2em; color: #999da3">Babel</a> <a href="/tags/CSS3/" style="font-size: 1.2em; color: #999da3">CSS3</a> <a href="/tags/http/" style="font-size: 1.1em; color: #999">http</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.3em; color: #99a1ac">前端</a> <a href="/tags/webpack/" style="font-size: 1.2em; color: #999da3">webpack</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/" title="查看更多"><i class="fas fa-angle-right"></i></a>
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2022/04/">
+          <span class="card-archive-list-date">四月 2022</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2020/08/">
+          <span class="card-archive-list-date">八月 2020</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2020/07/">
+          <span class="card-archive-list-date">七月 2020</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2020/05/">
+          <span class="card-archive-list-date">五月 2020</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2020/04/">
+          <span class="card-archive-list-date">四月 2020</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2020/03/">
+          <span class="card-archive-list-date">三月 2020</span>
+          <span class="card-archive-list-count">4</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2019/11/">
+          <span class="card-archive-list-date">十一月 2019</span>
+          <span class="card-archive-list-count">1</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2019/09/">
+          <span class="card-archive-list-date">九月 2019</span>
+          <span class="card-archive-list-count">2</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-11-26T07:47:05.286Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["One man can change the world"])
+  } else {
+    document.getElementById("subtitle").textContent = "One man can change the world"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

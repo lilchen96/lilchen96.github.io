@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>名词王国里的死刑 Execution in the Kingdom of Nouns | Chen</title><meta name="author" content="Chen"><meta name="copyright" content="Chen"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="名词王国里的死刑 by Steve Yegge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="名词王国里的死刑 Execution in the Kingdom of Nouns">
+<meta property="og:url" content="http://example.com/2019/09/24/%E5%90%8D%E8%AF%8D%E7%8E%8B%E5%9B%BD%E9%87%8C%E7%9A%84%E6%AD%BB%E5%88%91/index.html">
+<meta property="og:site_name" content="Chen">
+<meta property="og:description" content="名词王国里的死刑 by Steve Yegge">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/covers/kingdom.jpg">
+<meta property="article:published_time" content="2019-09-24T09:27:39.000Z">
+<meta property="article:modified_time" content="2024-11-26T06:08:59.193Z">
+<meta property="article:author" content="Chen">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="函数编程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/covers/kingdom.jpg"><link rel="shortcut icon" href="/images/config/favicon.ico"><link rel="canonical" href="http://example.com/2019/09/24/%E5%90%8D%E8%AF%8D%E7%8E%8B%E5%9B%BD%E9%87%8C%E7%9A%84%E6%AD%BB%E5%88%91/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '名词王国里的死刑 Execution in the Kingdom of Nouns',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/config/profile_photo.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/images/covers/kingdom.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Chen</span></a><a class="nav-page-title" href="/"><span class="site-name">名词王国里的死刑 Execution in the Kingdom of Nouns</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">名词王国里的死刑 Execution in the Kingdom of Nouns</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-09-24T09:27:39.000Z" title="发表于 2019-09-24 17:27:39">2019-09-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-26T06:08:59.193Z" title="更新于 2024-11-26 14:08:59">2024-11-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/2019/09/24/%E5%90%8D%E8%AF%8D%E7%8E%8B%E5%9B%BD%E9%87%8C%E7%9A%84%E6%AD%BB%E5%88%91/" data-flag-title="名词王国里的死刑 Execution in the Kingdom of Nouns"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span class="leancloud-visitors-count"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><font size=3>
+
+<p>&emsp;&emsp;发现一篇和函数式编程相关的文章。加深了自己对函数编程的理解，很有意思。便转载了过来。原文出自：Steve Yegge 的大作<a target="_blank" rel="noopener" href="http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html">《Execution in the Kingdom of Nouns》</a></p>
+<h2 id="翻译正文"><a href="#翻译正文" class="headerlink" title="翻译正文"></a>翻译正文</h2><p>&emsp;&emsp;Hello，world！今天我给大家讲一个关于 Java 魔鬼国王和他在全国范围内驱逐动词的故事。<br>&emsp;&emsp;注意：这个故事并没有什么圆满结局。如果你心灵脆弱或者吹毛求疵的话，这个故事不适合你。如果你易于动怒或喜欢在别人的博客上妄加评论， 那么请立即停止阅读。<br>&emsp;&emsp;在我们开始这个故事之前，先让我们熟悉一下背景：</p>
+<h3 id="溢出的垃圾"><a href="#溢出的垃圾" class="headerlink" title="溢出的垃圾"></a>溢出的垃圾</h3><p>&emsp;&emsp;所有使用 Java 的人都喜欢“用例”，所以让我们以一个用例开始吧：倒垃圾。就像这样：“Johnny，快去倒垃圾，他都快溢出来了！”<br>&emsp;&emsp;如何表达倒垃圾这一活动呢？如果你是一个正常说英语的人，你可以粗略地用以下几句话来描述它：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在水池下取出垃圾袋</span><br><span class="line">带着垃圾袋去车库</span><br><span class="line">把它扔到垃圾桶里</span><br><span class="line">走回来</span><br><span class="line">洗手</span><br><span class="line">坐回沙发上</span><br><span class="line">继续玩你的电视游戏（或者干其他的事）</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;即使你不用英语思考，你也会想象出一系列类似的动作。不考虑你选择的语言，或者采取的具体步骤，取决于你采取的行动，倒垃圾是一系列终止于垃圾在外面，你回到屋子里的动作。<br>&emsp;&emsp;我们的思想充斥着各种或勇敢的，或暴躁的，或激昂的动作。我们生活，我们呼吸，我们走路，我们谈话，我们笑，我们哭，我们希望，我们害怕，我们吃，我们喝， 我们走，我们听，我们倒垃圾。我们能自由地“做”和“行动”。假如我们只是石头，生活没准还算好，但是我们不会自由。因为我们可以“做”事，所以才会自由。<br>&emsp;&emsp;我们的生活也同时充斥着各种“名词”。我们吃“名词”（食物），我们从商店买“名词”（商品），我们坐在“名词”（凳子）上。 “名词”（石头）可能会忽然砸到你头上，在你的“名词”（头）上弄一个“名词”（大包）。名词即事物，想想没有了事物我们会怎样？但他们仅仅只是事物，比如： 意味着结束或者结束本身，或者一些贵重物品，或者我们周围经常看到的事物的名字。这是一座建筑，那是一个石头。任何一个小孩子都能指出名词，仅此而已。发生在名词身上的 “变化”才是最有趣的事情。<br>&emsp;&emsp;变化需要动作。动作是生活的调料。动作甚至给了调料以调料！毕竟除非你“吃”它，你是不会感到香这种味道的。名词也许无处不在，但是生活一直在变并一直有趣的功劳还是在于动词。<br>&emsp;&emsp;当然，除了名词和动词，我们还有形容词，介词，代词，冠词，连词，语气词，和许许多多其他让我们构造有趣语言的词汇。它们都在语言中扮演着自己的角色，而且每一个都很重要。 如果它们哪一个不存在了的话，那是挺遗憾的事情。<br>&emsp;&emsp;那么，如果有一天我们不再用动词了，你是不是感到很奇怪呢？<br>&emsp;&emsp;在下面我要给大家讲的故事里，这件事情真的发生了……</p>
+<h3 id="名词王国"><a href="#名词王国" class="headerlink" title="名词王国"></a>名词王国</h3><p>&emsp;&emsp;在 Java 王国中，国王 Java 以铁腕统治着他的国家，而他子民的思考方式也并不和你我一样。在这里，你可以看到，名词是十分重要的并直接服从国王的命令。 名词是最重要的居民，它们身穿艳丽的服装显得高贵而优雅，而这些衣服是由形容词提供的。而形容词哪，也很满意它们的生活，当然，他们不可能像名词那么高贵， 不过相比于动词来讲却幸运得很多。<br>&emsp;&emsp;因为，动词在 Java 王国里的日子，相当，相当的糟糕。<br>&emsp;&emsp;奉国王 Java 的法令，动词是隶属于名词的，但他们不仅仅是宠物而已。或者说连宠物都不是，在整个国家，动词负担起所有的劳力工作。实际上，他们是王国的奴隶，至少是农奴或者契约奴之类的。Java 王国的居民对自己的生活还是比较满意的，他们从来没有想到会发生什么变化。<br>&emsp;&emsp;动词负责王国里的所有工作，但是仍然获取不到任何尊重，甚至都不允许单独出来。如果一个名词被发现在公共场合出现，它会立即被名词逮捕。<br>&emsp;&emsp;当然“逮捕”也是一个动词，他也从不被允许单独行动；你必须创造一个“动词逮捕着”来协助逮捕。但是“创造”和“协助”哪？这样的话，“创造者”和“协助者”也各自在这个工作上 伴随“创造”和“协助”起到了重要的作用。<br>&emsp;&emsp;国王 Java，在他的上帝 Sun（现在是 Oracle 了吧…）的指引下，时不时地威胁要将所有动词驱逐出王国。如果那一天到来了，他们当然需要至少一个动词来做 各种工作，而从国王残忍的幽默感上猜测，这个动词很可能就是“执行”。<br>&emsp;&emsp;动词“执行”(execute)，和它的亲戚“运行”，“开始”，“走你”，“做”，“就这样做”或者相似的什么词可以通过找到合适的“执行者”来替代任何其他的动词。想等(wait)一下？ Waiter.execute().刷(brush)牙(teeth)?ToothBrusher(myTeeth).go().扔(take out)垃圾(garbage)?TrashDisposalPlanExecutor.doIt()。没有任何 一个动词是安全的，一切动词都会被执行的名词而取代。<br>&emsp;&emsp;在这种精神更加泛滥的角落，名词已经把动词驱逐干净。不仔细看的话，你会觉得仍然有动词存在，比如耕种或倒茶壶，但是一旦仔细观察，真相便浮出了水面：名词可以随意 命名紧跟在它们后面的动词“执行”，而不改变自身的角色。所以，当你看到“耕地者”在“耕地”，“倒茶壶者”在“倒”或者说“注册管理者”在“注册”，你真正看到的是魔鬼国王 Java 的 “执行者”大军，只不过他们披着所有者的外衣而已。</p>
+<h3 id="在其他王国里的动词"><a href="#在其他王国里的动词" class="headerlink" title="在其他王国里的动词"></a>在其他王国里的动词</h3><p>&emsp;&emsp;在其他编程语言的王国中，倒垃圾是一件很直白的事情，和我们用英语表述的十分相似。在 Java 王国中，数据实体是名词而函数是动词，而在其他王国中却不然：王国的居民 是混在一起的，而且在能顺利完成工作的前提下，只要他们愿意，既可以是名词也可以是动词。<br>&emsp;&emsp;比如在附近的 C 的领域，JavaScript 的地盘，Perl 的地盘和 Ruby 的地盘，他们可能会把倒垃圾这件事分解成一系列的动作（或者叫做动词或者函数）。如果他们将这些 动作以适当的顺序应用于适当的事物（拿垃圾，把它带出去，扔到垃圾桶里等等），倒垃圾的任务就圆满成功了。在这个过程中根本不需要执行者或其他的伴随者这出现。<br>&emsp;&emsp;在这些王国里，真的没有必要创造这么多的包裹器来包裹动词。他们没有“垃圾倾倒策略”之类的名词，或者“垃圾倾倒地点定位者”来只是你倒垃圾的路径，也没有“倒完垃圾后的回调”来保证你 倒垃圾后回到自己的沙发上。他们只是写一些动词来操作名词，并创建一个主要的名词，例如,提出垃圾（take_out_garbage()）并把一些需要做的子动作放在里面。<br>&emsp;&emsp;在这些王国中，当需求提升的时候，也通常有一种机制来生成比较重要的名词。如果这些精明的创造者创造出了一个全新的名词，比如房子，马车，或者耕起地来比人还快的机器， 他们会被给予一个统一的概念：类。而人们会给类一个名称，一个描述，一些状态和一些操作建议。<br>&emsp;&emsp;这些王国与 Java 的不同之处在于，动词是允许单独出现的，你没必要创造新的名词去束缚他们。<br>&emsp;&emsp;Java 王国的人一种轻视的态度看待他们的邻居；而这也是程序诸王国的现状。</p>
+<h3 id="如果你挖个足够深的洞…"><a href="#如果你挖个足够深的洞…" class="headerlink" title="如果你挖个足够深的洞…"></a>如果你挖个足够深的洞…</h3><p>&emsp;&emsp;在世界的另一边，有一篇贫瘠的居住地。在那里，动词居民的地位十分之高。这就是函数式王国，包括 Haskellia,Ocamlica,Schemeria 和一些其它的国家。 因为附近的国家很少，他们几乎不与 Java 王国何其附近的国家有接触。也正因为这样，函数式诸国们相互轻视，并有事没事的时候打一仗以排遣寂寞。<br>&emsp;&emsp;在函数式王国里，名词和动词一般被看做同样等级的居民。但是，名词，对是名词，基本上整天无所事事。他们的出现在做事或者执行任务的时候并没有多大意义，因为 活跃的动词们基本把能做的事情都做了。这里也没有什么奇怪的法律说要创造各种“帮助者”来帮助动词做事，因此在这些王国中，名词的数量和实际上存在事物的数量是相同的。<br>&emsp;&emsp;这样做的结果是，动词在这片土地上为所欲为（请原谅我的用词）。如果你是一个外来人，你很容易产生名词（函数）是这里最重要的居民的印象。顺便提一句， 这也是为什么这里被叫做函数式诸国还不是事物诸国的原因。<br>&emsp;&emsp;在最为遥远的地方，远离函数式诸国，存在着一块传说中的土地，“Lamda the Ultimate”(终极 lamda？霸气~[译者注])。传说中在那里，没有名词，只有动词。 那里有事物，但事物由动词组成。如果传说不虚，甚至数字，那里最为流行的货币，也是动词！数字 0 被表示为 lamda()，数字 1 是 lamda(lamda())，2 是 lamda(lamda(lamda())),以此类推。<br>&emsp;&emsp;在这片神奇的土地上，一切事物，别管你是名词，动词，还是其他什么，都是由最基本的动词 lamda 组成的。<br>&emsp;&emsp;老实说，Java 王国中幸福生活着的居民并没有意识到另外一个世界的存在。你能想象得知此事之后的文化震动么？他们可能会发明一个新的名词（比如“憎恶”）来表达自己新的感受。</p>
+<h3 id="Java-王国中的居民真的快乐么？"><a href="#Java-王国中的居民真的快乐么？" class="headerlink" title="Java 王国中的居民真的快乐么？"></a>Java 王国中的居民真的快乐么？</h3><p>&emsp;&emsp;你可能觉得 Java 王国中的生活有点奇怪，如果糟糕的话还效率还会变得十分低下。不过，你能从一个地方的童谣中看出他们的幸福程度，而 Java 王国的童谣，是一群古怪的诗。 比如，这里的儿童经常朗诵的寓言： （这就不翻了）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">For the lack of a nail,</span><br><span class="line">    throw new HorseshoeNailNotFoundException(&quot;no nails!&quot;);</span><br><span class="line"></span><br><span class="line">For the lack of a horseshoe,</span><br><span class="line">    EquestrianDoctor.getLocalInstance().getHorseDispatcher().shoot();</span><br><span class="line"></span><br><span class="line">For the lack of a horse,</span><br><span class="line">    RidersGuild.getRiderNotificationSubscriberList().getBroadcaster().run(</span><br><span class="line">      new BroadcastMessage(StableFactory.getNullHorseInstance()));</span><br><span class="line"></span><br><span class="line">For the lack of a rider,</span><br><span class="line">    MessageDeliverySubsystem.getLogger().logDeliveryFailure(</span><br><span class="line">      MessageFactory.getAbstractMessageInstance(</span><br><span class="line">        new MessageMedium(MessageType.VERBAL),</span><br><span class="line">        new MessageTransport(MessageTransportType.MOUNTED_RIDER),</span><br><span class="line">        new MessageSessionDestination(BattleManager.getRoutingInfo(</span><br><span class="line">                                        BattleLocation.NEAREST))),</span><br><span class="line">      MessageFailureReasonCode.UNKNOWN_RIDER_FAILURE);</span><br><span class="line"></span><br><span class="line">For the lack of a message,</span><br><span class="line">    ((BattleNotificationSender)</span><br><span class="line">      BattleResourceMediator.getMediatorInstance().getResource(</span><br><span class="line">        BattleParticipant.PROXY_PARTICIPANT,</span><br><span class="line">        BattleResource.BATTLE_NOTIFICATION_SENDER)).sendNotification(</span><br><span class="line">          ((BattleNotificationBuilder)</span><br><span class="line">            (BattleResourceMediator.getMediatorInstance().getResource(</span><br><span class="line">            BattleOrganizer.getBattleParticipant(Battle.Participant.GOOD_GUYS),</span><br><span class="line">            BattleResource.BATTLE_NOTIFICATION_BUILDER))).buildNotification(</span><br><span class="line">              BattleOrganizer.getBattleState(BattleResult.BATTLE_LOST),</span><br><span class="line">              BattleManager.getChainOfCommand().getCommandChainNotifier()));</span><br><span class="line"></span><br><span class="line">For the lack of a battle,</span><br><span class="line">    try &#123;</span><br><span class="line">        synchronized(BattleInformationRouterLock.getLockInstance()) &#123;</span><br><span class="line">          BattleInformationRouterLock.getLockInstance().wait();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; catch (InterruptedException ix) &#123;</span><br><span class="line">      if (BattleSessionManager.getBattleStatus(</span><br><span class="line">           BattleResource.getLocalizedBattleResource(Locale.getDefault()),</span><br><span class="line">           BattleContext.createContext(</span><br><span class="line">             Kingdom.getMasterBattleCoordinatorInstance(</span><br><span class="line">               new TweedleBeetlePuddlePaddleBattle()).populate(</span><br><span class="line">                 RegionManager.getArmpitProvince(Armpit.LEFTMOST)))) ==</span><br><span class="line">          BattleStatus.LOST) &#123;</span><br><span class="line">        if (LOGGER.isLoggable(Level.TOTALLY_SCREWED)) &#123;</span><br><span class="line">          LOGGER.logScrewage(BattleLogger.createBattleLogMessage(</span><br><span class="line">            BattleStatusFormatter.format(BattleStatus.LOST_WAR,</span><br><span class="line">                                         Locale.getDefault())));</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">For the lack of a war,</span><br><span class="line">    new ServiceExecutionJoinPoint(</span><br><span class="line">      DistributedQueryAnalyzer.forwardQueryResult(</span><br><span class="line">        NotificationSchemaManager.getAbstractSchemaMapper(</span><br><span class="line">          new PublishSubscribeNotificationSchema()).getSchemaProxy().</span><br><span class="line">            executePublishSubscribeQueryPlan(</span><br><span class="line">              NotificationSchema.ALERT,</span><br><span class="line">              new NotificationSchemaPriority(SchemaPriority.MAX_PRIORITY),</span><br><span class="line">              new PublisherMessage(MessageFactory.getAbstractMessage(</span><br><span class="line">                MessageType.WRITTEN,</span><br><span class="line">                new MessageTransport(MessageTransportType.WOUNDED_SURVIVOR),</span><br><span class="line">                new MessageSessionDestination(</span><br><span class="line">                  DestinationManager.getNullDestinationForQueryPlan()))),</span><br><span class="line">              DistributedWarMachine.getPartyRoleManager().getRegisteredParties(</span><br><span class="line">                PartyRoleManager.PARTY_KING ||</span><br><span class="line">                PartyRoleManager.PARTY_GENERAL ||</span><br><span class="line">                PartyRoleManager.PARTY_AMBASSADOR)).getQueryResult(),</span><br><span class="line">        PriorityMessageDispatcher.getPriorityDispatchInstance())).</span><br><span class="line">      waitForService();</span><br><span class="line"></span><br><span class="line">All for the lack of a horseshoe nail.</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;直到今天，这仍然是美好的建议。<br>&emsp;&emsp;尽管在 Java 王国的叙述方式和本.富兰克林的原作大有不同，但是这里的居民觉得他们的重新编排还是有一种不同的魅力在里面。<br>&emsp;&emsp;而最大的魅力在于“架构”，是所有人都能看见的。架构被国王 Java 授予了之高无上的地位，因为，架构全部是由名词构成的。正如我们所知的，在 Java 王国，名词即事物，事物 的荣耀高于一切的动词。架构由无数事物构成：你可以看或触摸的事物，给你留下壮观印象的事物，用棍子刮擦发出美妙声音的事物。国王 Java，十分喜欢刮擦的噪音； 每当他新换车夫的时候，踢轮子发出的美妙声音让他觉得很满意。不管上面的故事有什么瑕疵，“事物”总是不缺少的。<br>&emsp;&emsp;作为人类，我们的第一本能总是寻找由各宗物体构成的庇护。庇护越坚固，我们感觉越安全。在 Java 王国，有很过坚固的东西让居民们感到安心。他们感慨如此庞大的架构 建造之神奇并认为它是“最为坚固的设计”。而且每当结构变化时，他们就越坚信这点。接着，架构的力量也变得强的令人生畏以至于没有人认为可以摧毁他。<br>&emsp;&emsp;除了坚固的架构之外，在 Java 王国中的所有东西很有调理地组织着：你会发现任何名词都会呆在适当的地方。这里每个故事都有一个固定的模式：实例构造在故事的表述中占了主要的篇幅， 因为每个抽象都会有一个管理者（Manager），而且每个管理者都有一个 run()方法。Java 居民们觉得他们可以用这种模型表述任何事情。这是一种“名词计算”，只要你愿意， 它可以满足任何抽象，任何计算。你需要的仅仅是足够的名词，名词的构造器，获取器方法，和重要的 execute()函数来实现你的计划。<br>&emsp;&emsp;Java 王国的居民活的不仅仅是幸福，简直是迸发出强烈的自豪感。</p>
+<h3 id="StateManager-getConsiderationSetter-“Noun-Oriented-Thinking”-State-HARMFUL-run"><a href="#StateManager-getConsiderationSetter-“Noun-Oriented-Thinking”-State-HARMFUL-run" class="headerlink" title="StateManager.getConsiderationSetter(“Noun Oriented Thinking”, State.HARMFUL).run()"></a>StateManager.getConsiderationSetter(“Noun Oriented Thinking”, State.HARMFUL).run()</h3><p>&emsp;&emsp;或者，正如外面的世界所说，“面向名词的思考是有害的”<br>&emsp;&emsp;面向对象的编程把名词放到首位，但是我们为什么非得把名词捧上神坛以至于让语句变的如此啰嗦哪？ 为什么一种语句成分的低位非得高于另外一种？这并不是好像面向对象的编程突然使得动词的低位降低，正如我们认为的那样。 这是一种奇怪的认识的扭曲。正如我的朋友 Jacob Gabrielso 一次说到，提倡面向对象的编程好比提倡面向裤子的穿衣方式。<br>&emsp;&emsp;Java 的静态类型系统，像起他任何类似的语言一样，有着共同的问题。但是过分强调面向名词的编程思想给人带来很大的困扰。 任何类型系统都会要求你重新梳理思路来配合它，但是清除独立的动词看起来十分不合情理。<br>&emsp;&emsp;C++并没有这个问题。因为 C++作为 C 语言的超集允许你定义单独的函数。 此外，C++提供了独立的命名空间的概念。Java 的类承载了太多的内容：命名空间，用户自定义类型，句法委托机制，可见性和作用域机制，等等。<br>&emsp;&emsp;不要误解了我的意思。我并没有说 C++“好”，我只是赞美它至少相比于 Java 来讲灵活的类型系统。C++出现问题会让听众抓狂并且想杀了你 （比如，意想不到的段错误和其他难以发现的隐患）。并且在 C++你很难找到一个能描述你的想法的咒语。 但是它灵活地可表述的思想的范围却远远超出了 Java。因为 C++提供给你了动词，谁想用一个没有动词的语言说话哪？<br>&emsp;&emsp;类是 Java 中唯一提供的建模的工具。所以当一个新的想法出现在你脑海的时候，你不得不重塑它，包装它，甚至弄碎它直到它变成一个名词， 即使它开始是一个动作，过程，或者任何其他不是“物”的概念。<br>&emsp;&emsp;我似乎回到了 8,9 年前一帮搞 Perl 的家伙对我说的：“伙计，并不是所有的东西都是对象的。”<br>&emsp;&emsp;很奇怪，Java 似乎是主流面向对象语言中唯一一个完全以名词为中心的语言。 在 Python 或者 Ruby 中，你不会找到 AbstractProxyMediator，NotificationStrategyFactory 或者其他类似的东西。 为什么在 Java 中它们满地都是？我敢打赌这是原因出在了动词的身上。Python，Ruby，JavaScript，Perl 当然，还有所有的函数式编程语言允许你声明并传递函数而不用用类包装它。<br>&emsp;&emsp;很显然，动态类型语言的使用更容易；你可以仅仅传递一个引用给函数，函数可以用名字获取它，而函数的调用者仅仅用合适的参数调用函数并正确地使用返回的值就可以了。<br>&emsp;&emsp;但是很多静态类型的语言同样也有第一类的函数。 这包括固定类型的语言比如 C 和 C++，还有类型自动推断的语言比如 Haskell 和 ML。 这些语言仅仅需要一些语法来建立，传递和调用函数的内容就可以了。<br>&emsp;&emsp;Java 没有理由不简单地添加第一类函数并最终实现一个成熟的，没有扭曲的可以让人自由运用动词来实现他们想法的世界。 实际上，有一个基于 JVM 叫做 The Nice programming language 的语言实现了一个非常类似 Java 的语法，并包含了一个非常具有表现力的实现了使用动词方式：独立函数。 而 Java 强制你用 Callback，Ruunable 或其他匿名接口来包装它为一个类以便于调用。<br>&emsp;&emsp;Sun 公司甚至没有打破他们一切函数都必须被类拥有的信条。任何匿名的函数都会具有一个隐式的 this 指针指向定义它的类；问题解决了。<br>&emsp;&emsp;我不知道为什么 Sun 公司坚持 Java 矗立在名词王国。我怀疑这是低估了他们的民众；他们添加了泛型，一个更加复杂的概念，所以他们不再关心如何保持他们语法的简练。 并且添加动词并不是一件坏事，这是因为 Java 现今所建立的：为一个 Java 程序员提供工具让他们按自己的想法编程更有意义。<br>&emsp;&emsp;我真心希望 Java 能修复这个缺陷，以便我可以把垃圾带出去并回来玩游戏或者一切当时在做的事情。</p>
+<p>译文转载自：<a target="_blank" rel="noopener" href="https://blog.csdn.net/seven_3306/article/details/20608877">https://blog.csdn.net/seven_3306&#x2F;article&#x2F;details&#x2F;20608877</a></p>
+</font>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF/">技术</a><a class="post-meta__tags" href="/tags/%E5%87%BD%E6%95%B0%E7%BC%96%E7%A8%8B/">函数编程</a></div><div class="post-share"><div class="social-share" data-image="/images/covers/kingdom.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2019/09/27/%E6%B5%85%E8%B0%88cookie/" title="浅谈cookie"><img class="cover" src="/images/covers/cookie.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">浅谈cookie</div></div><div class="info-2"><div class="info-item-1">  基本信息&emsp;&emsp;cookie 是一个非常具体的东西，指的就是浏览器里面能永久存储的一种数据。跟服务器没啥关系，仅仅是浏览器实现的一种数据存储功能。&emsp;&emsp;cookie 存储在用户本地终端。&emsp;&emsp;cookie 大小限制一般为 4k。&emsp;&emsp;cookie 会增加请求大小。&emsp;&emsp;cookie 是存储在本地的，可以找到相应的文件。 如何设置和发送 cookie&emsp;&emsp;服务器在 response head 中可以设置 set-cookie，来存储 cookie 到客户端。&emsp;&emsp;浏览器发送请求时，request head 中可以携带 cookie。 会话期 cookie 和 持久化 cookie&emsp;&emsp;没设置 Expires 或 Max-Age 的 cookie 为会话期 cookie，即结束会话（关闭浏览器）就被清除。会话期 cookie 存储在浏览器内存中。但浏览器通常支持会话恢复功能。&emsp;&emsp;设置了 Expires 或...</div></div></div></a><a class="pagination-related" href="/2019/06/27/%E5%AF%B9%E4%BA%8EJS%E7%9A%84%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/" title="对于JS的原型的理解"><img class="cover" src="/images/covers/kingdom.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">对于JS的原型的理解</div></div><div class="info-2"><div class="info-item-1">  最近看ES5特性,所以又回看了一遍JS原型的相关知识。看到这样一句话“构造函数是妈，原型是爹”觉得很有意思，很形象。举几个例子： 1Function.prototype ===  类比：Function 1Object.prototype.__proto__ 类比：Object是妈妈，Object.prototype是爸爸，Object.prototype.__proto__即是爸爸的爸爸。  </div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2020/03/31/CSS3%E5%8A%A8%E7%94%BB%E5%92%8CAnimate-css/" title="CSS3动画和Animate.css"><img class="cover" src="/images/covers/animate.gif" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2020-03-31</div><div class="info-item-2">CSS3动画和Animate.css</div></div><div class="info-2"><div class="info-item-1">  容易混淆的几个 CSS3 标签animation（动画）：用于设置动画属性，他是一个简写的属性，包含 6 个属性。 transition（过渡）：用于设置元素的样式过度，和 animation 有着类似的效果，但细节上有很大的不同。 transform（变形）：用于元素进行旋转、缩放、移动或倾斜，和设置样式的动画并没有什么关系，就相当于 color 一样用来设置元素的“外表”。 translate（移动）：translate 只是 transform 的一个属性值，即移动。 transition控制一个或多个属性的变化过程。语法：transition: property duration timing-function delay;属性介绍：property：需要监听的 CSS 属性。如有多个属性，用逗号隔开。duration：规定完成过渡效果需要多少秒或毫秒。timing-function：规定速度效果的速度曲线。transition-delay：过渡效果何时开始。 例如： 123.myEl&#123;    transition: width 2s ease-in...</div></div></div></a><a class="pagination-related" href="/2020/05/06/CSS%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" title="CSS实现毛玻璃效果"><img class="cover" src="/images/covers/animate.gif" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2020-05-06</div><div class="info-item-2">CSS实现毛玻璃效果</div></div><div class="info-2"><div class="info-item-1">  前言最近做的项目需要把一个图片模糊化，作为背景使用。经过网上查询，发现 CSS3 的一个属性可以很轻松的实现。 代码blur 对图片做高斯模糊处理 1234567.image:&#123;    -webkit-filter: blur(20px);    -moz-filter: blur(20px);    -ms-filter: blur(20px);    -o-filter: blur(20px);    filter: blur(20px);&#125;   </div></div></div></a><a class="pagination-related" href="/2019/03/26/Windows%E5%8F%B3%E9%94%AE%E6%B7%BB%E5%8A%A0cmd%E5%91%BD%E4%BB%A4%E8%A1%8C/" title="Windows右键添加cmd命令行"><img class="cover" src="/images/covers/cmd.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-26</div><div class="info-item-2">Windows右键添加cmd命令行</div></div><div class="info-2"><div class="info-item-1">  &emsp;&emsp;最近常敲命令行，每次都要 cd 到相关路径，有点麻烦。上网查询了一下，发现 windows 系统可以通过注册表的方式将 cmd 命令行添加到右键菜单。这样就可以在指定路径下打开 cmd 命令行，很方便。 最终效果  具体步骤1.在电脑上任意位置创建一个.txt 文件，命名为OpenCmdHere.txt。 2.在文件中输入如下代码： 1234567891011121314151617181920212223242526272829Windows Registry Editor Version 5.00[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere]@=&quot;在此处打开命令窗口&quot;&quot;Icon&quot;=&quot;cmd.exe&quot;[HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere\command]@=&quot;cmd.exe /s /k pushd...</div></div></div></a><a class="pagination-related" href="/2018/09/03/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8markdown%EF%BC%88%E4%B8%80%EF%BC%89/" title="学习使用markdown（一）"><img class="cover" src="/images/covers/markdownicon.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2018-09-03</div><div class="info-item-2">学习使用markdown（一）</div></div><div class="info-2"><div class="info-item-1">  Markdown简介Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。Markdown 编写的文档后缀为 .md, .markdown。 Markdown 应用Markdown 能被使用来撰写电子书，如：Gitbook。当前许多网站都广泛使用 Markdown 来撰写帮助文档或是用于论坛上发表消息。例如：GitHub、简书、reddit、Diaspora、Stack Exchange、OpenStreetMap 、SourceForge等。 Markdown语法标题多级标题#递增代码如下： 123456# 一级标题## 二级标题### 三级标题#### 四级标题##### 五级标题###### 六级标题  列表无序列表代码如下： 123- 文本1- 文本2- 文本3  实现效果：   文本 1 文本 2 文本 3   有序列表代码如下： 1231....</div></div></div></a><a class="pagination-related" href="/2018/09/05/%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8markdown%EF%BC%88%E4%BA%8C%EF%BC%89/" title="学习使用markdown（二）"><img class="cover" src="/images/covers/markdownicon.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2018-09-05</div><div class="info-item-2">学习使用markdown（二）</div></div><div class="info-2"><div class="info-item-1">  继续学习Markdown语法 图片图片展示代码如下： 12![alt 属性文本](图片地址)![alt 属性文本](图片地址 &quot;可选标题&quot;)  实现效果：    图片链接代码如下: 1234这个链接用 img 作为网址变量 [图片][img]然后在文档的结尾为变量赋值（网址）[img]: /images/covers/markdownicon.png  实现效果：  这个链接用 img 作为网址变量 图片  表格Markdown 制作表格使用|来分隔不同的单元格，使用-来分隔表头和其他行。代码如下： 1234|  表头   | 表头  ||  ----  | ----  || 单元格  | 单元格 || 单元格  | 单元格 |  实现效果：  表格：    表头 表头    单元格 单元格   单元格 单元格    我们可以设置表格的对齐方式：  -: 设置内容和标题栏居右对齐。 :- 设置内容和标题栏居左对齐。 :-: 设置内容和标题栏居中对齐。  代码如下： 1234| 左对齐 | 中对齐 |右对齐 || :---- | :----: |----:...</div></div></div></a><a class="pagination-related" href="/2019/06/27/%E5%AF%B9%E4%BA%8EJS%E7%9A%84%E5%8E%9F%E5%9E%8B%E7%9A%84%E7%90%86%E8%A7%A3/" title="对于JS的原型的理解"><img class="cover" src="/images/covers/kingdom.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-06-27</div><div class="info-item-2">对于JS的原型的理解</div></div><div class="info-2"><div class="info-item-1">  最近看ES5特性,所以又回看了一遍JS原型的相关知识。看到这样一句话“构造函数是妈，原型是爹”觉得很有意思，很形象。举几个例子： 1Function.prototype ===  类比：Function 1Object.prototype.__proto__ 类比：Object是妈妈，Object.prototype是爸爸，Object.prototype.__proto__即是爸爸的爸爸。  </div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/config/profile_photo.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Chen</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/lilchen96"><i class="fab fa-github"></i><span>关注我</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/17/%E8%AE%B0%E4%B8%80%E6%AC%A1SSE%E6%8E%A5%E5%8F%A3%E5%AF%B9%E6%8E%A5%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次SSE接口对接的问题"><img src="/images/covers/SSE.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记一次SSE接口对接的问题"/></a><div class="content"><a class="title" href="/2022/04/17/%E8%AE%B0%E4%B8%80%E6%AC%A1SSE%E6%8E%A5%E5%8F%A3%E5%AF%B9%E6%8E%A5%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次SSE接口对接的问题">记一次SSE接口对接的问题</a><time datetime="2022-04-17T06:35:32.000Z" title="发表于 2022-04-17 14:35:32">2022-04-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/28/%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD/" title="文件批量下载"><img src="/images/covers/download.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文件批量下载"/></a><div class="content"><a class="title" href="/2020/08/28/%E6%96%87%E4%BB%B6%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD/" title="文件批量下载">文件批量下载</a><time datetime="2020-08-28T06:42:36.000Z" title="发表于 2020-08-28 14:42:36">2020-08-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/07/13/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6/" title="函数式组件和自定义表格单元格"><img src="/images/covers/JSX_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="函数式组件和自定义表格单元格"/></a><div class="content"><a class="title" href="/2020/07/13/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BB%84%E4%BB%B6/" title="函数式组件和自定义表格单元格">函数式组件和自定义表格单元格</a><time datetime="2020-07-13T09:22:19.000Z" title="发表于 2020-07-13 17:22:19">2020-07-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/05/11/%E8%AE%B0%E4%B8%80%E6%AC%A1webpack%E9%85%8D%E7%BD%AE%E4%BA%A7%E7%94%9F%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次webpack配置产生的问题"><img src="/images/covers/webpack.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记一次webpack配置产生的问题"/></a><div class="content"><a class="title" href="/2020/05/11/%E8%AE%B0%E4%B8%80%E6%AC%A1webpack%E9%85%8D%E7%BD%AE%E4%BA%A7%E7%94%9F%E7%9A%84%E9%97%AE%E9%A2%98/" title="记一次webpack配置产生的问题">记一次webpack配置产生的问题</a><time datetime="2020-05-11T01:25:57.000Z" title="发表于 2020-05-11 09:25:57">2020-05-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/05/06/CSS%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" title="CSS实现毛玻璃效果"><img src="/images/covers/animate.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS实现毛玻璃效果"/></a><div class="content"><a class="title" href="/2020/05/06/CSS%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" title="CSS实现毛玻璃效果">CSS实现毛玻璃效果</a><time datetime="2020-05-06T10:33:42.000Z" title="发表于 2020-05-06 18:33:42">2020-05-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By Chen</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: 'CMWgm5tnhdmLKVm5SOmBGKNd-gzGzoHsz',
+      appKey: 'z8VhStM9hf7iKy0uVULgg9br',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: true,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
